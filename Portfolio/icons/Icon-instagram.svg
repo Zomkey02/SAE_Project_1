@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 135">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Icons">
+    <g id="Instagram">
+      <rect class="cls-1" x="2.5" y="2.5" width="130" height="130" rx="35" ry="35"/>
+      <circle class="cls-1" cx="67.5" cy="67.5" r="30"/>
+      <circle class="cls-2" cx="104.5" cy="31.5" r="6"/>
+    </g>
+  </g>
+</svg>

@@ -8,93 +8,141 @@
     <title>Document</title>
 </head>
 <body>
-        <!--header-->
-        <header>
-        <div class="logo">
-            <a href="/index.html"><img src="logo/Logo.png"></a>
-        </div>
+    <!--HEADER START-->
+    <header>
+        <div class="logo"><a href="/index.html"><img src="logo/logo.svg"></a></div>
         <!-- hamburger -->
         <input type="checkbox" id="navi-toggle" class="checkbox" />
-        <label for="navi-toggle" class="button1"> <p>MENU</p><span class="icon">&nbsp;</span></label>
+        <label for="navi-toggle" class="button1"> <p>MENU</p><span class="menuicon">&nbsp;</span></label>
         <div class="background">&nbsp;</div>
         <!-- nav -->
         <nav class="nav">
-            <ul class="list">
-                <div class="part1">
-                <li class="item"> <a class="link"> about us </a> </li>
-                <li class="item"> <a class="link" href="/gallery.html"> gallery</a> </li>
-                <li class="item"> <a class="link"> menu </a> </li>
-                </div>
-                <div class="part2">
-                <li class="item"> <a class="link" href="/contact.html"> contact </a> </li>
-                <li class="item"> <a class="link"> shop </a> </li>
-                </div>
+            <ul class="nav-list">
+                <li class="nav-item"> <a class="nav-link" href="/404.html"> about us </a> </li>
+                <li class="nav-item"> <a class="nav-link" href="/404.html"> menu </a> </li>
+                <li class="nav-item"> <a class="nav-link" href="/gallery.html"> gallery</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="/contact.html"> contact </a> </li>
+                
             </ul>
         </nav>
-        </header>
-        <!--bodycontent-->
-        <div class="parallax">
-            <!--gallery-body-->
-            <h2>GALLERY</h2>
-            <div class="grid-container">
-            <div class="grid-container-column-1">
-                <div class="grid-item">
-                    <img class="img_gallery" src="img/img_gallery/makingcoffee.jpg" alt="Picture of the café">
-                    <p class="img-descrip">Our Barista preparing a lovely machiato.</p>
-                </div>
-                <div class="grid-item">
-                    <img class="img_gallery" src="img/img_gallery/taroballbowl.jpg" alt="Picture of the café">
-                    <p class="img-descrip">Our Taro-Ball-Bowl, a traditional taiwanese dessert to keep you cool in the summer. (only available in july and august) </p>
-                </div>
-                <div class="grid-item">
-                    <img class="img_gallery" src="img/img_gallery/wagashi.jpg" alt="Picture of the café">
-                    <p class="img-descrip">Our Wagashis, a traditional Japanese confectionary, with delicate flavors and beautiful appearance. <br>Our café offers them in spring as a dessert option, which can be enjoyed with our selection of Japanese teas. </p>
-                </div>
+    </header>
+    <!--HEADER END-->
+
+    <!--bodycontent Desktop-->
+    <div class="gallery-text" >
+        <h2>GALLERY</h2>
+        <h3>check out COZY BEARs seasonal desserts + atmosphere...</h3>
+    </div>
+    <div class="gallery-body">
+        <div class="slider-container">
+            <div class="slide">
+                <img class="img_gallery" src="img/img_gallery/makingcoffee.jpg" alt="Picture of our Barista preparing a lovely machiato.">
+                <p class="img-descrip">Our Barista preparing a lovely machiato.</p>
             </div>
-            <div class="grid-container-column-2">
-                <div class="grid-item">
-                    <img class="img_gallery" src="img/img_gallery/frontdesk.jpg" alt="Picture of the café">
-                    <p class="img-descrip">Our frontdesk on a sunnyday.</p>
-                </div>
-                <div class="grid-item"
-                ><img class="img_gallery" src="img/img_gallery/fruitcups.jpg" alt="Picture of the café">
+            <div class="slide">
+                <img class="img_gallery" src="img/img_gallery/frontdesk.jpg" alt="Picture of Our frontdesk on a sunnyday.">
+                <p class="img-descrip">Our frontdesk on a sunnyday.</p>
+            </div>
+            <div class="slide">
+                <img class="img_gallery" src="img/img_gallery/coffeetable.jpg" alt="Picture of an Americano and Pastries in our café">
+                <p class="img-descrip">Americano and Pastries, to keep it simple</p>
+            </div>
+            <div class="slide">
+                    <img class="img_gallery" src="img/img_gallery/mochi.jpg" alt="Picture of some mochis">
+                    <p class="img-descrip">Check out our mochis with different flavours to go with your coffee or tea.</p>
+            </div>
+            <div class="slide">
+                <img class="img_gallery" src="img/img_gallery/fruitcups.jpg" alt="Picture of some fruitcups">
                 <p class="img-descrip">Our fruit cups are the perfect pick-me-up for when you need a boost of vitamins and a burst of flavor. </p>
             </div>
-                <div class="grid-item">
-                    <img class="img_gallery" src="img/img_gallery/mochimaking.jpg" alt="Picture of the café">
-                    <p class="img-descrip">Our mochi is made with love and a whole lot of pounding for that perfect chewy texture. Here you see our mochi master turn simple rice into a delicious work of art.</p>
-                </div>
+            <div class="slide">
+                <img class="img_gallery" src="img/img_gallery/minicroissasnts.jpg" alt="Picture of minicrioissants, we offer">
+                <p class="img-descrip">Minicroissasnts to still the little hunger.</p>
             </div>
-            <div class="grid-container-column-3">
-                <div class="grid-item">
-                    <img class="img_gallery" src="img/img_gallery/matcha.jpg" alt="Picture of the café">
-                    <p class="img-descrip">Our Matcha-Softserve for a summer refreshment.(only available in july and august)</p>
-                </div>
-                <div class="grid-item">
-                    <img class="img_gallery" src="img/img_gallery/petitsfourfrais.jpg" alt="Picture of the café">
-                    <p class="img-descrip">Our petits fours frais are the perfect treat for anyone with a sweet tooth and a love for all things delicate and delicious. </p>
-                </div>
-                <div class="grid-item">
-                    <img class="img_gallery" src="img/img_gallery/cafebrown.jpg" alt="Picture of the café">
-                    <p class="img-descrip">Our silent-corner with wooden elements to feel grounded and calm.</p>
-                </div>
+            <div class="slide">
+                <img class="img_gallery" src="img/img_gallery/wagashi.jpg" alt="Picture of wagashis, japanese confectionary">
+                <p class="img-descrip">Wagashis, <br> a traditional Japanese confectionary.<br>We offer them in spring, which can be enjoyed with our selection of Japanese teas. </p>
             </div>
-            <div class="grid-container-column-4">
-                <div class="grid-item">
-                    <img class="img_gallery" src="img/img_gallery/coffeetable.jpg" alt="Picture of the café">
-                    <p class="img-descrip">Americano and Pastries, to keep it simple</p>
-                </div>
-                <div class="grid-item">
-                    <img class="img_gallery" src="img/img_gallery/mochi.jpg" alt="Picture of the café">
-                    <p class="img-descrip">Check out our mochis with different flavours to go with your coffee or tea.</p>
-                </div>
-                <div class="grid-item">
-                    <img class="img_gallery" src="img/img_gallery/minicroissasnts.jpg" alt="Picture of the café">
-                    <p class="img-descrip">Minicroissasnts to still the little hunger.</p>
-                </div>
-            </div>            
+            <div class="slide">
+                <img class="img_gallery" src="img/img_gallery/mochimaking.jpg" alt="Picture of our chef preparing mochi">
+                <p class="img-descrip">Our mochis are made with love and a whole lot of pounding for that perfect chewy texture.</p>
+            </div>
+            <div class="slide">
+                    <img class="img_gallery" src="img/img_gallery/cafebrown.jpg" alt="Picture of a cozy nook in our café">
+                    <p class="img-descrip">Discover a peaceful retreat in our café's wooden corner - perfect for reading and relaxation. Come take a break and enjoy the serenity.</p>
+            </div>
+            <div class="slide">
+                <img class="img_gallery" src="img/img_gallery/taroballbowl.jpg" alt="Picture of taro-ball-bowls, a taiwanese cold treat">
+                <p class="img-descrip">Savor the creamy & chewy delight of taro ball bowls, a must-try Taiwanese treat!</p>
+            </div>
+            <div class="slide">
+                <img class="img_gallery" src="img/img_gallery/petitsfourfrais.jpg" alt="Picture of pétits-fours">
+                <p class="img-descrip">Satisfy your sweet tooth with our fresh petits fours. </p>
+            </div>
+            <div class="slide">
+                <img class="img_gallery" src="img/img_gallery/matcha.jpg" alt="Picture of our Matcha-Softserve">
+                <p class="img-descrip">Our Matcha-Softserve for a summer refreshment.</p>
+            </div>
         </div> 
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- FOOTER START-->
+    <footer>
+        <div class="infofooter">
+            <div class="infobox">
+                <div class="infoitem">
+                    <img class="footericon" src="icons/icon-map.svg" alt="and icon of a map">
+                    <div class="infotext"><p> Maxmustermannstraße 123<br>1010 Vienna</p></div>
+                </div>
+                <div class="infoitem">
+                    <img class="footericon" src="icons/icon-clock.svg" alt="and icon of a clock">
+                    <div class="infotext"><p>Mo - Fr  8:00 - 18:00 <br>Sa, So 10:00 - 18:00</p></div>
+                </div>
+                <div class="infoitem">
+                    <img class="footericon" src="icons/contact.svg" alt="and icon of a phone and mail">
+                    <div class="infotext"><p>+43 676 1336 xxx <br> info@cozybearcafe.com</p></div>
+                </div>
+            </div>
+            <div class="infolinks">
+                <a class="footerlink" href="/404.html" >Legal Notice</a>
+                <a class="footerlink" href="/404.html" >Privacy Policy</a>
+                <a class="footerlink" href="/404.html" >Copyright 2023</a>
+            </div>
+        </div> 
+        <div class="socialmediaicons"> 
+            <a class="instagramicon" href="/404.html"> <img src="icons/icon-instagram.svg" alt="the Instagramicon"></a>
+            <a class="facebookicon" href="/404.html"> <img src="icons/icon-facebook.svg" alt="the Facebookicon"></a>
+        </div>
+        <div class="newsletter">
+            <div class="newslettertext"> <h3>Savour the flavour of news and updates by subscribing to COZY BEARs Newsletter today.</h3> </div>
+                <div class="newsletterform">  
+                    <form class="footer-form" action="" method="get">
+                        <div class="form-label">
+                            <label for="email">Email: </label>
+                        </div>
+                        <div class="buttonsubscribe">
+                            <input class="form-footer-input" type="email" name="email" id="email" required>
+                            <a class="buttonfooter" href="#popup2">Subscribe!</a>
+                        </div>
+                    </form>
+                    <div id="popup2" class="newsletter-popup">
+                        <div class="pop-up">
+                            <img class="logo3" src="/logo/logo3.svg" alt="different version of the logo without text">
+                            <h3>Thanks for joining the fam!</h3>
+                            <a class="close-button" href="#">&times; </a>
+                            <div class="popup-content">
+                                <p>Keep an eye out for our sweet updates, special offers and event announcements. We can't wait to treat you to some yummy goodness.</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>    
         </div>
         
+    </footer>
+    <!-- FOOTER END-->
+
+    <script src="script.js"></script>
 </body>
 </html>

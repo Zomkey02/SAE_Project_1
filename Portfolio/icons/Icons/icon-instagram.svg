@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 135 135">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Unbenannter_Verlauf_30-3);
+        stroke: url(#Unbenannter_Verlauf_30-4);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        stroke: url(#Unbenannter_Verlauf_30);
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: url(#Unbenannter_Verlauf_30-2);
+      }
+    </style>
+    <linearGradient id="Unbenannter_Verlauf_30" data-name="Unbenannter Verlauf 30" x1="6.4" y1="118.77" x2="128.6" y2="16.23" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffbf08"/>
+      <stop offset=".63" stop-color="#df3c54"/>
+      <stop offset="1" stop-color="#a028ab"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_30-2" data-name="Unbenannter Verlauf 30" x1="42.6" y1="88.39" x2="92.4" y2="46.61" xlink:href="#Unbenannter_Verlauf_30"/>
+    <linearGradient id="Unbenannter_Verlauf_30-3" data-name="Unbenannter Verlauf 30" x1="99.9" y1="35.36" x2="109.1" y2="27.64" xlink:href="#Unbenannter_Verlauf_30"/>
+    <linearGradient id="Unbenannter_Verlauf_30-4" data-name="Unbenannter Verlauf 30" x1="96" y1="31.5" x2="113" y2="31.5" xlink:href="#Unbenannter_Verlauf_30"/>
+  </defs>
+  <g id="Ebene_3" data-name="Ebene 3">
+    <g>
+      <rect class="cls-2" x="2.5" y="2.5" width="130" height="130" rx="35" ry="35"/>
+      <circle class="cls-3" cx="67.5" cy="67.5" r="30"/>
+      <circle class="cls-1" cx="104.5" cy="31.5" r="6"/>
+    </g>
+  </g>
+</svg>

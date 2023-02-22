@@ -8,65 +8,177 @@
     <title>Document</title>
 </head>
 <body>
-     <!--header-->
-     <header>
-        <div class="logo">
-            <a href="/index.html"><img src="logo/Logo.png"></a>
-        </div>
+    <!--HEADER START-->
+    <header>
+        <div class="logo"><a href="/index.html"><img src="logo/logo.svg"></a></div>
         <!-- hamburger -->
         <input type="checkbox" id="navi-toggle" class="checkbox" />
-        <label for="navi-toggle" class="button1"> <p>MENU</p><span class="icon">&nbsp;</span></label>
+        <label for="navi-toggle" class="button1"> <p>MENU</p><span class="menuicon">&nbsp;</span></label>
         <div class="background">&nbsp;</div>
         <!-- nav -->
         <nav class="nav">
-            <ul class="list">
-                <div class="part1">
-                <li class="item"> <a class="link"> about us </a> </li>
-                <li class="item"> <a class="link" href="/gallery.html"> gallery</a> </li>
-                <li class="item"> <a class="link"> menu </a> </li>
-                </div>
-                <div class="part2">
-                <li class="item"> <a class="link" href="/contact.html"> contact </a> </li>
-                <li class="item"> <a class="link"> shop </a> </li>
-                </div>
+            <ul class="nav-list">
+                <li class="nav-item"> <a class="nav-link" href="/404.html"> about us </a> </li>
+                <li class="nav-item"> <a class="nav-link" href="/404.html"> menu </a> </li>
+                <li class="nav-item"> <a class="nav-link" href="/gallery.html"> gallery</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="/contact.html"> contact </a> </li>
+                
             </ul>
         </nav>
     </header>
-    <!--contact-body-->
+    <!--HEADER END-->
+
+    <!--CONTACT BODY START-->
     <div class="contactbody">
-    <div class="section1">
-        <fieldset class="reservationinfo">
-            <legend>reservationinfo</legend>
-            <div class="formreservation">
-            <form>
-                <p><label>Date : <br> <input type="date" /> </label></p>
-                <p><label>Time: <br> <input type="time" /></label></p>
-                <p><label>Guests: <br> <input type="number" /></label></p>
-            </form></div>
-        </fieldset>
-        <fieldset class="contactinfo">
-        <legend>contactinfo</legend>
-            <form>
-                <p><label>First and Lastname : <br> <input type="text" /></label></p>
-                <p><label>E-Mail : <br> <input type="email" /></label></p>
-                <p><label>Telefonnumber : <br> <input type="number" /></label></p>
+        <div class="section1">^
+            <div class="contact-mob-text">
+                <h3>Book your beary sweet retreat.</h3>
+            </div>
+            <form id="myForm" action="/" method="get">
+                <fieldset class="reservationinfo">
+                    <legend>RESERVATION</legend>
+                    <div class="formreservation">
+                            <div class="input-control">
+                                <label for="dateform">Date :</label>
+                                <input type="date" name="dateform" id="dateform"/> 
+                                <div class="error" ></div>
+                            </div>
+                            <div class="input-control">
+                                <label for="timeform">Time: </label>
+                                <input type="time" name="timeform" id="timeform" />
+                                <div class="error" ></div>
+                            </div>
+                            <div class="input-control">
+                                <label for="guestform">Guests: </label>
+                                <!--<input type="text" name="guestform" id="guestform" />-->
+                                <select name="guestform" id="guestform" required>
+                                    <option value="0"></option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5 People</option>
+                                </select>
+                                <div class="error" ></div>
+                            </div>
+                    </div>
+                </fieldset>
+                <fieldset class="contactinfo">
+                    <legend>CONTACT</legend>
+                    <div class="formcontact">
+                            <div class="input-control">
+                                <label for="nameform">First and Lastname:</label>
+                                <input id="nameform" type="text" name="nameform" />
+                                <div class="error" ></div>
+                            </div>
+                            <div class="input-control">
+                                <label for="mailform">E-Mail:</label> 
+                                <input id="email" type="email" name="mailform" />
+                                <div class="error" ></div>
+                            </div>
+                            <div class="input-control">
+                                <label for="numberform">Telefonnumber:</label> 
+                                <input type="number" name="numberform" id="numberform"/>
+                                <div class="error" ></div>
+                            </div>
+                    </div>
+                </fieldset>
+                <div class="checkbox-box">
+                    <div class="checkbox-form">
+                        <input type="checkbox" id="checkbox-newsletter" name="checkbox-newsletter"  >
+                        <label for="checkbox-newsletter" class="checkbox-label">I would like to receive exclusive offers and news by email from COZY BEAR.</label>
+                    </div>
+                    <div class="checkbox-form">
+                        <input type="checkbox" id="checkbox-privacy" name="checkbox-privacy" >
+                        <label for="checkbox-privacy" class="checkbox-label">I accept COZY BEAR’s Terms of Service and Privacy Policy.</label><br>
+                    </div>
+                </div>
+                <div class="submitbutton">
+                    <a class="submit-button"  href="#popup1">SUBMIT</a>
+                </div>
+                <div id="popup2" class="reservation-popup">
+                    <div class="pop-up">
+                        <img class="logo3" src="/logo/logo3.svg" alt="different version of the logo without text">
+                        <h3>Yay! You're one step closer to a sweet  dessert adventure at COZY BEAR Café.</h3>
+                        <a class="close-button" href="#">&times; </a>
+                        <div class="popup-content">
+                            <p>We've received your reservation request and it's being processed with love. Check your inbox for a confirmation and get ready to satisfy your sweet tooth. Can't wait to see you!</p> 
+                        </div>
+                    </div>
+                </div>
             </form>
-        </fieldset>
-        <div class="button">
-            <p><button class="send" type="submit">SEND</button></p>
+        </div>
+        <div class="section2">
+            <div class="contactbox">
+                <div class="addresscontact"> <h3>COZY BEAR GmbH</h3> <p class="address"> Hohenstaufengasse 6<br>1010 Wien </p> </div>
+                <div class="hourscontact"> <h3>opening hours</h3><p class="hours">Mo-Fr 8:00-18:00<br>Sa, So 10:00-18:00 </p> </div>
+                <div class="contactcontact"> <h3>contact</h3><p class="contact"> +43 676 1336 xxxx<br>info@cozybear.com </p> </div>
+            </div>
+            <div class="contactmap">
+                <iframe class="maplocation" src="https://www.openstreetmap.org/export/embed.html?bbox=16.364690959453586%2C48.21251122672745%2C16.368231475353245%2C48.2142198978759&amp;layer=mapnik&amp;marker=48.2133655694289%2C16.366461217403412"></iframe><br/><small><a  class="maplink" href="https://www.openstreetmap.org/?mlat=48.21337&amp;mlon=16.36646#map=19/48.21337/16.36646"></a></small>
+                <!--<iframe  class= "maplocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.6416954350284!2d16.364398915947522!3d48.21351705384727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d07bd299cf3a9%3A0xd1bf5306b576acc4!2sHohenstaufengasse%206%2C%201010%20Wien!5e0!3m2!1sde!2sat!4v1675608671493!5m2!1sde!2sat" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+            </div>
         </div>
     </div>
-    <div class="section2">
-        <div class="addresscontact">
-            <p class="address"> <span class="name"><h3>COZY BEAR GmbH</h3></span><br>Maxmustermannstraße 1<br>Wien<br>Österreich
-            </p>
-        </div><div class="hourscontact">
-            <p class="hours"><b>Opening hours</b><br>Mo-Fr 8:00-18:00<br>Sa, So 10:00-18:00</p>
+    <!--CONTACT BODY END-->
+
+    <!-- FOOTER START-->
+    <footer>
+        <div class="infofooter">
+            <div class="infobox">
+                <div class="infoitem">
+                    <img class="footericon" src="icons/icon-map.svg" alt="and icon of a map">
+                    <div class="infotext"><p> Maxmustermannstraße 123<br>1010 Vienna</p></div>
+                </div>
+                <div class="infoitem">
+                    <img class="footericon" src="icons/icon-clock.svg" alt="and icon of a clock">
+                    <div class="infotext"><p>Mo - Fr  8:00 - 18:00 <br>Sa, So 10:00 - 18:00</p></div>
+                </div>
+                <div class="infoitem">
+                    <img class="footericon" src="icons/contact.svg" alt="and icon of a phone and mail">
+                    <div class="infotext"><p>+43 676 1336 xxx <br> info@cozybearcafe.com</p></div>
+                </div>
+            </div>
+            <div class="infolinks">
+                <a class="footerlink" href="/404.html" >Legal Notice</a>
+                <a class="footerlink" href="/404.html" >Privacy Policy</a>
+                <a class="footerlink" href="/404.html" >Copyright 2023</a>
+            </div>
+        </div> 
+        <div class="socialmediaicons"> 
+            <a class="instagramicon" href="/404.html"> <img src="icons/icon-instagram.svg" alt="the Instagramicon"></a>
+            <a class="facebookicon" href="/404.html"> <img src="icons/icon-facebook.svg" alt="the Facebookicon"></a>
         </div>
-        <div class="contactcontact">
-        <p class="contact"><b>contact</b><br>+43 676 1336 xxxx<br>info@cozybear.com</p>
-    </div>
-    </div>
-    </div>
+        <div class="newsletter">
+            <div class="newslettertext"> <h3>Savour the flavour of news and updates by subscribing to COZY BEARs Newsletter today.</h3> </div>
+                <div class="newsletterform">  
+                    <form class="footer-form" action="" method="get">
+                        <div class="form-label">
+                            <label for="email">Email: </label>
+                        </div>
+                        <div class="buttonsubscribe">
+                            <input class="form-footer-input" type="email" name="email" id="email" required>
+                            <a class="buttonfooter" href="#popup2">Subscribe!</a>
+                        </div>
+                    </form>
+                    <div id="popup2" class="newsletter-popup">
+                        <div class="pop-up">
+                            <img class="logo3" src="/logo/logo3.svg" alt="different version of the logo without text">
+                            <h3>Thanks for joining the fam!</h3>
+                            <a class="close-button" href="#">&times; </a>
+                            <div class="popup-content">
+                                <p>Keep an eye out for our sweet updates, special offers and event announcements. We can't wait to treat you to some yummy goodness.</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+        </div>
+        
+    </footer>
+    <!-- FOOTER END-->
+   
+    <script src="script.js"></script>
+
 </body>
+
 </html>
